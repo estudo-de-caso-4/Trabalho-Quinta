@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_prova/view/login_docente.dart';
 
 void main() => runApp(Home());
 
@@ -14,7 +15,10 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return MaterialApp(
         initialRoute: '/',
-        //trabalho de desenvolvimento web
+        routes: {
+        '/': (context) => LoginDocente(),
+        
+      },
     );
   }
 }
