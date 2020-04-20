@@ -43,14 +43,24 @@ class _LoginDocenteState extends State<LoginDocente> {
               ButtonTheme(
                 height: 60.0,
                 child: RaisedButton(
-                  onPressed: () => {},
+                  onPressed: () => {
+                    Navigator.pushNamed(context, '/TelaFormulario1'),
+                  },
                   child: Text(
                     'Entrar',
                     style: TextStyle(color: Colors.white),
                   ),
                   color: Colors.blue,
                 ),
-              )
+              ),
+              GestureDetector(
+                  child: Text("Cadastrar",
+                      style: TextStyle(
+                          decoration: TextDecoration.underline,
+                          color: Colors.blue)),
+                  onTap: () {
+                    Navigator.pushNamed(context, '/TelaCadastro');
+                  })
             ],
           ),
         ),
