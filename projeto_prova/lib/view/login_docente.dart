@@ -48,19 +48,29 @@ class _LoginDocenteState extends State<LoginDocente> {
                   },
                   child: Text(
                     'Entrar',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,),
                   ),
                   color: Colors.blue,
                 ),
               ),
-              GestureDetector(
-                  child: Text("Cadastrar",
-                      style: TextStyle(
-                          decoration: TextDecoration.underline,
-                          color: Colors.blue)),
-                  onTap: () {
-                    Navigator.pushNamed(context, '/TelaCadastro');
-                  })
+              Container(
+                margin: const EdgeInsets.all(15.0),
+                child: Column(
+                  children: <Widget>[
+                    GestureDetector(
+                        child: Text("Cadastrar",
+                            style: TextStyle(
+                                fontSize: 18,
+                                decoration: TextDecoration.underline,
+                                color: Colors.blue)),
+                        onTap: () {
+                          Navigator.pushNamed(context, '/TelaCadastro');
+                        }),
+                  ],
+                ),
+              )
             ],
           ),
         ),
