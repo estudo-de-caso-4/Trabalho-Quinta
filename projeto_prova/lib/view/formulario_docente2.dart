@@ -18,7 +18,7 @@ class _FormularioDocente2State extends State<FormularioDocente2> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text("Protocolo"),
+          title: Text("Protocolo 2ª parte"),
         ),
         body: Builder(builder: (BuildContext context) {
           return Form(
@@ -98,7 +98,7 @@ class _FormularioDocente2State extends State<FormularioDocente2> {
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: TextFormField(
-                    controller: _textController3,
+                    controller: _textController6,
                     decoration: InputDecoration(
                       labelText: "Biotério",
                       suffixIcon: Icon(Icons.vignette),
