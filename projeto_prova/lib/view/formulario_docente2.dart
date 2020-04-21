@@ -131,7 +131,6 @@ class _FormularioDocente2State extends State<FormularioDocente2> {
             ),
           );
         })
-      
     );
   }
 }

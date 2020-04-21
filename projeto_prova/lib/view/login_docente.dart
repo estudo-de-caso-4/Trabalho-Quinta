@@ -44,7 +44,7 @@ class _LoginDocenteState extends State<LoginDocente> {
                 height: 60.0,
                 child: RaisedButton(
                   onPressed: () => {
-                    Navigator.pushNamed(context, '/TelaFormulario1'),
+                    Navigator.pushNamed(context, '/TelaFormulario2'),
                   },
                   child: Text(
                     'Entrar',
