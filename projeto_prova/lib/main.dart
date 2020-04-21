@@ -3,6 +3,7 @@ import 'package:projeto_prova/view/cadastro_docente.dart';
 import 'package:projeto_prova/view/formulario_docente1.dart';
 import 'package:projeto_prova/view/formulario_docente2.dart';
 import 'package:projeto_prova/view/login_docente.dart';
+import 'package:projeto_prova/view/tela_principal.dart';
 
 void main() => runApp(Home());
 
@@ -22,6 +23,7 @@ class _HomeState extends State<Home> {
         routes: {
         '/': (context) => LoginDocente(),
         '/TelaCadastro': (context) => CadastroDocente(),
+        '/TelaPrincipal': (context) => TelaPrincipal(),
         '/TelaFormulario1': (context) => FormularioDocente1(),
         '/TelaFormulario2': (context) => FormularioDocente2(),
       },

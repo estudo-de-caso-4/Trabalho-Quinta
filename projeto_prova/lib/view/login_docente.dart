@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_prova/view/cadastro_docente.dart';
-import 'package:projeto_prova/view/cadastro_docente.dart';
 
 class LoginDocente extends StatefulWidget {
   LoginDocente({Key key}) : super(key: key);
@@ -44,7 +42,7 @@ class _LoginDocenteState extends State<LoginDocente> {
                 height: 60.0,
                 child: RaisedButton(
                   onPressed: () => {
-                    Navigator.pushNamed(context, '/TelaFormulario1'),
+                    Navigator.pushNamed(context, '/TelaPrincipal'),
                   },
                   child: Text(
                     'Entrar',
