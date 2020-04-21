@@ -99,6 +99,8 @@ class _CadastroDocenteState extends State<CadastroDocente> {
               ],
             ),
           );
-        }));
+        })
+        
+        );
   }
 }
