@@ -12,6 +12,8 @@ class _FormularioDocente2State extends State<FormularioDocente2> {
   final _textController = TextEditingController();
   final _textController1 = TextEditingController();
   final _textController2 = TextEditingController();
+  final _textController3 = TextEditingController();
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +31,7 @@ class _FormularioDocente2State extends State<FormularioDocente2> {
                     controller: _textController,
                     decoration: InputDecoration(
                       labelText: "Data inicio",
-                      suffixIcon: Icon(Icons.person),
+                      suffixIcon: Icon(Icons.calendar_today),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(
                           Radius.circular(10)
@@ -49,10 +51,10 @@ class _FormularioDocente2State extends State<FormularioDocente2> {
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: TextFormField(
-                    controller: _textController,
+                    controller: _textController1,
                     decoration: InputDecoration(
                       labelText: "Data fim",
-                      suffixIcon: Icon(Icons.person),
+                      suffixIcon: Icon(Icons.today),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(
                           Radius.circular(10)
@@ -72,10 +74,10 @@ class _FormularioDocente2State extends State<FormularioDocente2> {
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: TextFormField(
-                    controller: _textController1,
+                    controller: _textController2,
                     decoration: InputDecoration(
                       labelText: "Animal a ser usado",
-                      suffixIcon: Icon(Icons.dvr),
+                      suffixIcon: Icon(Icons.pets),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(
                           Radius.circular(10)
@@ -96,10 +98,10 @@ class _FormularioDocente2State extends State<FormularioDocente2> {
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: TextFormField(
-                    controller: _textController,
+                    controller: _textController3,
                     decoration: InputDecoration(
                       labelText: "Biotério",
-                      suffixIcon: Icon(Icons.person),
+                      suffixIcon: Icon(Icons.vignette),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(
                           Radius.circular(10)
