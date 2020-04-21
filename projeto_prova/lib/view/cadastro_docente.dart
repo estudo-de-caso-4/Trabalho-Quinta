@@ -13,6 +13,9 @@ class _CadastroDocenteState extends State<CadastroDocente> {
   final _textController = TextEditingController();
   final _textController1 = TextEditingController();
   final _textController2 = TextEditingController();
+
+  bool _masc = false;
+  bool _fem = false;
   @override
   Widget build(BuildContext context) {
    return Scaffold(
@@ -64,6 +67,32 @@ class _CadastroDocenteState extends State<CadastroDocente> {
                       }
                       return null;
                     },
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Row(
+                    children: <Widget>[
+                      Text('Masculino'),
+                      Checkbox( onChanged: (bool resp){
+                        setState(() {
+                          _masc = resp;
+                          _fem = false;
+                        });
+                      },
+                      value: _masc,
+                      ),
+                      Text('Feminino'),
+                      Checkbox( onChanged: (bool resp){
+                        setState(() {
+                          _fem = resp;
+                          _masc = false;
+                        
+                        });
+                      },
+                      value: _fem,
+                      ),
+                    ],
                   ),
                 ),
                 Padding(

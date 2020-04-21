@@ -9,10 +9,10 @@ class FormularioDocente2 extends StatefulWidget {
 
 class _FormularioDocente2State extends State<FormularioDocente2> {
   final _formKey = GlobalKey<FormState>();
-  final _textController = TextEditingController();
-  final _textController1 = TextEditingController();
-  final _textController2 = TextEditingController();
   final _textController3 = TextEditingController();
+  final _textController4 = TextEditingController();
+  final _textController5 = TextEditingController();
+  final _textController6 = TextEditingController();
   
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class _FormularioDocente2State extends State<FormularioDocente2> {
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: TextFormField(
-                    controller: _textController,
+                    controller: _textController3,
                     decoration: InputDecoration(
                       labelText: "Data inicio",
                       suffixIcon: Icon(Icons.calendar_today),
@@ -51,7 +51,7 @@ class _FormularioDocente2State extends State<FormularioDocente2> {
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: TextFormField(
-                    controller: _textController1,
+                    controller: _textController4,
                     decoration: InputDecoration(
                       labelText: "Data fim",
                       suffixIcon: Icon(Icons.today),
@@ -74,7 +74,7 @@ class _FormularioDocente2State extends State<FormularioDocente2> {
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: TextFormField(
-                    controller: _textController2,
+                    controller: _textController5,
                     decoration: InputDecoration(
                       labelText: "Animal a ser usado",
                       suffixIcon: Icon(Icons.pets),
@@ -98,7 +98,7 @@ class _FormularioDocente2State extends State<FormularioDocente2> {
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: TextFormField(
-                    controller: _textController3,
+                    controller: _textController6,
                     decoration: InputDecoration(
                       labelText: "Biotério",
                       suffixIcon: Icon(Icons.vignette),
