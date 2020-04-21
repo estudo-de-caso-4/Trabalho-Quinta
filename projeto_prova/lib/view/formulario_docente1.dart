@@ -23,24 +23,24 @@ class _FormularioDocente1State extends State<FormularioDocente1> {
                 Container(
                   child: Column(
                     children: <Widget>[
-                      Padding(padding: const EdgeInsets.all(10.0) ),
+                      Padding(padding: const EdgeInsets.all(10.0)),
                       Text('Justificativa:'),
                       Padding(
                         padding: const EdgeInsets.all(10.0),
-                      child: new ConstrainedBox(
-                        constraints: BoxConstraints(
-                          maxHeight: 300.0,
-                        ),
-                        child: new Scrollbar(
-                          child: new SingleChildScrollView(
-                            scrollDirection: Axis.vertical,
-                            reverse: true,
-                            child: new TextField(
-                              maxLines: 2,
+                        child: new ConstrainedBox(
+                          constraints: BoxConstraints(
+                            maxHeight: 300.0,
+                          ),
+                          child: new Scrollbar(
+                            child: new SingleChildScrollView(
+                              scrollDirection: Axis.vertical,
+                              reverse: true,
+                              child: new TextField(
+                                maxLines: 2,
+                              ),
                             ),
                           ),
                         ),
-                      ),
                       ),
                     ],
                   ),
@@ -48,24 +48,24 @@ class _FormularioDocente1State extends State<FormularioDocente1> {
                 Container(
                   child: Column(
                     children: <Widget>[
-                      Padding(padding: const EdgeInsets.all(10.0) ),
+                      Padding(padding: const EdgeInsets.all(10.0)),
                       Text('Resumo: '),
                       Padding(
                         padding: const EdgeInsets.all(10.0),
-                      child: new ConstrainedBox(
-                        constraints: BoxConstraints(
-                          maxHeight: 300.0,
-                        ),
-                        child: new Scrollbar(
-                          child: new SingleChildScrollView(
-                            scrollDirection: Axis.vertical,
-                            reverse: true,
-                            child: new TextField(
-                              maxLines: 2,
+                        child: new ConstrainedBox(
+                          constraints: BoxConstraints(
+                            maxHeight: 300.0,
+                          ),
+                          child: new Scrollbar(
+                            child: new SingleChildScrollView(
+                              scrollDirection: Axis.vertical,
+                              reverse: true,
+                              child: new TextField(
+                                maxLines: 2,
+                              ),
                             ),
                           ),
                         ),
-                      ),
                       ),
                     ],
                   ),
@@ -73,40 +73,35 @@ class _FormularioDocente1State extends State<FormularioDocente1> {
                 Container(
                   child: Column(
                     children: <Widget>[
-                      Padding(padding: const EdgeInsets.all(10.0) ),
+                      Padding(padding: const EdgeInsets.all(10.0)),
                       Text('Resumo em Inglês:'),
                       Padding(
                         padding: const EdgeInsets.all(10.0),
-                      child: new ConstrainedBox(
-                        constraints: BoxConstraints(
-                          maxHeight: 300.0,
-                        ),
-                        child: new Scrollbar(
-                          child: new SingleChildScrollView(
-                            scrollDirection: Axis.vertical,
-                            reverse: true,
-                            child: new TextField(
-                              maxLines: 2,
+                        child: new ConstrainedBox(
+                          constraints: BoxConstraints(
+                            maxHeight: 300.0,
+                          ),
+                          child: new Scrollbar(
+                            child: new SingleChildScrollView(
+                              scrollDirection: Axis.vertical,
+                              reverse: true,
+                              child: new TextField(
+                                maxLines: 2,
+                              ),
                             ),
                           ),
                         ),
-                      ),
                       ),
                     ],
                   ),
                 ),
                 Divider(),
-                 RaisedButton(
+                RaisedButton(
                   onPressed: () => {
                     Navigator.pushNamed(context, '/TelaFormulario2'),
                   },
-                  child: Text(
-                    'Continuar'
-                    
-                  ),
-                 
+                  child: Text('Continuar'),
                 ),
-              
               ],
             ),
           );
