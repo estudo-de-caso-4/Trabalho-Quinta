@@ -98,7 +98,7 @@ class _FormularioDocente2State extends State<FormularioDocente2> {
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: TextFormField(
-                    controller: _textController6,
+                    controller: _textController3,
                     decoration: InputDecoration(
                       labelText: "Biotério",
                       suffixIcon: Icon(Icons.vignette),
