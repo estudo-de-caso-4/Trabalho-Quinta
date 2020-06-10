@@ -13,7 +13,8 @@ class Docente {
   final String dataFim;
   //emitirFormulario();
 
-  Docente(this.id, this.nome, this.matricula, this.senha, this.dnasc, this.just, this.resum, this.resumEn, this.dataIni, this.dataFim);
+  Docente({this.id, this.nome, this.matricula, this.senha, this.dnasc, this.just, this.resum, 
+  this.resumEn, this.dataIni, this.dataFim});
 
   Map<String, dynamic> toMap(){
     return{

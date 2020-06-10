@@ -3,7 +3,7 @@ class Animal{
   final String especie;
   final String areaBioterio;
 
-  Animal(this.especie, this.areaBioterio, this.id);
+  Animal({this.especie, this.areaBioterio, this.id});
   
   Map<String, dynamic> toMap(){
     return{

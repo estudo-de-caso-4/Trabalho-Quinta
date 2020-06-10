@@ -15,6 +15,13 @@ class _FormularioDocente2State extends State<FormularioDocente2> {
   final _textController5 = TextEditingController();
   final _textController6 = TextEditingController();
   SQLiteService sqLiteService;
+
+  @override
+  void initState() { 
+    sqLiteService = SQLiteService();
+    sqLiteService.incializacao();
+    super.initState();
+  }
   
   @override
   Widget build(BuildContext context) {

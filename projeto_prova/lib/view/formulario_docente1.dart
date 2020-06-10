@@ -11,6 +11,14 @@ class FormularioDocente1 extends StatefulWidget {
 class _FormularioDocente1State extends State<FormularioDocente1> {
   final _formKey = GlobalKey<FormState>();
   SQLiteService sqLiteService;
+
+  @override
+  void initState() { 
+    sqLiteService = SQLiteService();
+    sqLiteService.incializacao();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

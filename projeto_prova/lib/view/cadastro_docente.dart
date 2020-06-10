@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
 import 'package:intl/intl.dart';
+import 'package:projeto_prova/services/service_bd.dart';
 import 'package:projeto_prova/view/login_docente.dart';
 
 class CadastroDocente extends StatefulWidget {
@@ -16,9 +17,18 @@ class _CadastroDocenteState extends State<CadastroDocente> {
   final _textController1 = TextEditingController();
   final _textController2 = TextEditingController();
   final format = DateFormat("dd-MM-yyyy");
-
   bool _masc = false;
   bool _fem = false;
+
+  SQLiteService sqLiteService;
+
+  @override
+  void initState() { 
+    sqLiteService = SQLiteService();
+    sqLiteService.incializacao();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

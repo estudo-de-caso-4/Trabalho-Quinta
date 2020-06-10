@@ -4,7 +4,7 @@ class Parecista {
 
   //descreverParecer();
   //recomendar();
-  Parecista(this.nome, this.matricula);
+  Parecista({this.nome, this.matricula});
 
   Map<String, dynamic> toMap() {
     return {
