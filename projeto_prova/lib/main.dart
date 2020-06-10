@@ -8,6 +8,7 @@ import 'package:projeto_prova/view/tela_principal.dart';
 void main() => runApp(Home());
 
 class Home extends StatefulWidget {
+
   Home({Key key}) : super(key: key);
 
   @override
