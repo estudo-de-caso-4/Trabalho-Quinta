@@ -7,7 +7,7 @@ class SQLiteService {
          database = openDatabase(
          join(await getDatabasesPath(), 'cadastro.db'),
          onCreate: (db, version){
-           return db.execute(("CREATE TABLE animal (especie TEXT, areaBioterio TEXT)");
+           return db.execute("CREATE TABLE animal (id INTRGER PRIMARY KEY, especie TEXT, areaBioterio TEXT)");
          }, 
          version: 1,
         );
