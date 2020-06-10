@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_prova/services/service_bd.dart';
 
 class FormularioDocente1 extends StatefulWidget {
   FormularioDocente1({Key key}) : super(key: key);
@@ -9,6 +10,7 @@ class FormularioDocente1 extends StatefulWidget {
 
 class _FormularioDocente1State extends State<FormularioDocente1> {
   final _formKey = GlobalKey<FormState>();
+  SQLiteService sqLiteService;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

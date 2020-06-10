@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_prova/services/service_bd.dart';
 
 class FormularioDocente2 extends StatefulWidget {
   FormularioDocente2({Key key}) : super(key: key);
@@ -13,6 +14,7 @@ class _FormularioDocente2State extends State<FormularioDocente2> {
   final _textController4 = TextEditingController();
   final _textController5 = TextEditingController();
   final _textController6 = TextEditingController();
+  SQLiteService sqLiteService;
   
   @override
   Widget build(BuildContext context) {

@@ -6,9 +6,14 @@ class Docente {
   final String dnasc;
 
   //preencherFormulario();
+  final String just;
+  final String resum;
+  final String resumEn;
+  final String dataIni;
+  final String dataFim;
   //emitirFormulario();
 
-  Docente(this.id, this.nome, this.matricula, this.senha, this.dnasc);
+  Docente(this.id, this.nome, this.matricula, this.senha, this.dnasc, this.just, this.resum, this.resumEn, this.dataIni, this.dataFim);
 
   Map<String, dynamic> toMap(){
     return{
@@ -16,7 +21,12 @@ class Docente {
       'nome': nome,
       'matricula': matricula,
       'senha': senha,
-      'dnasc':dnasc
+      'dnasc':dnasc,
+      'justificativa': just,
+      'resumo': resum,
+      'resumoInglês':resumEn,
+      'dIni': dataIni,
+      'dFim': dataFim,
     };
   }
 }
