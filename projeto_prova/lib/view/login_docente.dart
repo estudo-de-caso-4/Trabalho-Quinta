@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_prova/model/docente.dart';
 
 class LoginDocente extends StatefulWidget {
   LoginDocente({Key key}) : super(key: key);
